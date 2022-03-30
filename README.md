@@ -9,7 +9,7 @@ Coming Soon.
 - [ ] Finish README
 - [ ] Add Scroll Bar
 - [ ] Start adding content
-- [ ] Fix 
+- [ ] Fix layout issues
 
 # License
 
