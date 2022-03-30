@@ -10,6 +10,8 @@ Coming Soon.
 - [ ] Add Scroll Bar
 - [ ] Start adding content
 - [ ] Fix layout issues
+- [ ] Add in jQuery for FadeIn()
+- [ ] Start other pages
 
 # License
 
