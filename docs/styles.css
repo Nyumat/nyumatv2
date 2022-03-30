@@ -23,13 +23,11 @@ li {
       50% {border-color: transparent}
 }
 h1 {
-      color:palevioletred;
-      font-family: 'Rock Salt', cursive;
+      color:rgb(0, 38, 255);
+      font-family: 'Rock 3D', cursive;
       white-space: nowrap;
       margin: 0 auto; 
       padding-right: 00px;
-      letter-spacing: .15em;
-      animation: blink .5s step-end infinite alternate;
 }
 
 html {
@@ -61,7 +59,7 @@ li:not(:last-child) {
 
 .header {
       font-size: 2.5em;
-      font-family: 'Rock Salt', cursive;
+      font-family: 'Rock 3D', cursive;
       display: flex;
       justify-content: center;
       align-content: center;
@@ -82,7 +80,10 @@ li:not(:last-child) {
 
 .container p {
       width: fit-content;
-      font-size: 3rem;
+      position: absolute;
+      top: 10%;
+      transform: translate(-50%, -50%);
+      font-size: 6rem;
       padding: 0.5rem;
       font-weight: bold;
       letter-spacing: 0.1rem;
@@ -135,8 +136,6 @@ li:not(:last-child) {
 }
 
 ul {
-
-      
       background-color: transparent;
       font-family: 'Rock 3D', cursive;
 }
