@@ -2,7 +2,7 @@
 
 ## The Project
 
-Coming Soon.
+This repository is going to be dedicated to my new personal websiite. Built with ❤️  in vanilla JS, HTMl5, and CSS.
 
 # To-Do's:
 
