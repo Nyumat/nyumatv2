@@ -38,4 +38,18 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
       if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
-document.addEventListener("")
+window.onload = fadeIn;
+
+function fadeIn() {
+      var fade = document.getElementById("body");
+      var opacity = 0;
+      var intervalID = setInterval(function () {
+
+            if (opacity < 1) {
+                  opacity = opacity + 0.1
+                  fade.style.opacity = opacity;
+            } else {
+                  clearInterval(intervalID);
+            }
+      }, 200);
+}
