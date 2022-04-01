@@ -1,4 +1,5 @@
 
+
 const is_index = document.getElementById("is_index").innerHTML;
 
 const display_loading = (time_true, time_false, is_index) => {
