@@ -18,12 +18,12 @@
 
 - [ ] Finish README
 - [ ] Add Scroll Bar
-- [!] Create loading animation
+- [x] Create loading animation
 - [ ] Start adding content
 - [ ] Fix layout issues
-- [!] Add in jQuery for FadeIn()
-- [!] Start other pages
-- [!] Add Cookies
+- [x] Add in jQuery for FadeIn()
+- [x] Start other pages
+- [x] Add Cookies
 
 # License
 
