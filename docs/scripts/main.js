@@ -39,11 +39,7 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 });
 
 
-
-      
-
 window.onload = () => {
-      // Show a black screen on load
       fadeInBody();
       fadeInLoaderInner();
 }
