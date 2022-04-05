@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-      <title>Tom Nyuma</title>
+      <title>Homework One</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link rel="stylesheet" href="../styling/loading.css">
       <link rel="stylesheet" href="../styling/styles.css">
-      <link rel="stylesheet" href="../styling/particles.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Rock+3D&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 </head>
 
 
-<body id="body" style="height:1000px">
+<body id="body" style="height:4000px">
 
       <div>
             <p id="is_index">false</p>
@@ -55,7 +56,6 @@
             <!----Fade In Wrapper---->
             <div id="wrapper">
 
-
                   <!---------------Typewriter Container----------------->
                   <div class="container">
                         <p>
@@ -72,19 +72,37 @@
                   <!---------------Typewriter Script-------------------->
                   <script src="../scripts/main.js"></script>
                   <div class="header">
-                        <h1>Blogs for CS290<h1>
+                        <h1>Assignment 1<h1>
                   </div>
 
+                  
+
+                  
+                  <div class="item" data-aos-delay="1000" data-aos="zoom-in-down">
+                        
+                        <br>
+                        <br>
+                        <p id="input">
+                              The most complex thing I've created in web development is a personal
+                              website. I used HTML, Bootstrap, CSS, and JavaScript to create it. This website
+                              that you're seeing this (my newer personal website) from is also pretty complex.
+                        </p>
 
 
-                  <ul id="assignlist">
-                        <li><a href="./blogassignment1.html">Blog Assignment 1</a></li>
-                        <!--<li><a href="assignment2.html">Assignment 2</a></li>-->
-                  </ul>
+                  </div>
 
+                  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                  <script>
+                        
+                        AOS.init({
+                              duration: 3000,
+                              once: false,
+                        });
+                  
 
-
-
+                  </script>
+      
+            
 
                   <div id="nav_bar_wrapper">
                         <!---Top Nav Bar-->
@@ -110,7 +128,9 @@
                         </div>
                   </div>
 
+
             </div>
+            
       </div>
 
 </body>

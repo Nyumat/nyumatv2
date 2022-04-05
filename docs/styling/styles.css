@@ -10,15 +10,6 @@ body {
       display: none;
 }
 
-body {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      height: 100vh;
-}
 
 li {
       display: inline;
@@ -122,24 +113,7 @@ li:not(:last-child) {
       100% {background-color: rgb(0, 38, 255);}
 }
 
-.nav {
-      width: fit-content;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      flex-direction: row;
-      position: fixed;
-      top: 0;
-      background-color: transparent;
-      color: #fff;
-      font-size: 1.5em;
-      font-weight: normal;
-      letter-spacing: 0.1rem;
-      text-align: center;
-      overflow: hidden;
-      justify-content: space-evenly;
-}
+
 
 ul {
       background-color: transparent;
@@ -168,7 +142,7 @@ ul {
 
 #wrapper {
       position: relative;
-      top: -150px;
+      top: 200px;
       display: flex;
       flex-direction: column;
       justify-content: center;
