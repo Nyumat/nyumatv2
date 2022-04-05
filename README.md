@@ -17,11 +17,10 @@
 # To-Do's:
 
 - [ ] Finish README
-- [ ] Add Scroll Bar
-- [x] Create loading animation
-- [ ] Start adding content
-- [ ] Fix layout issues
-- [x] Add in jQuery for FadeIn()
+- [ ] Hide top/bottom nav classes on scroll
+- [ ] Add image to HW1
+- [ ] Begin Code Blog
+- [ ] Fix layout issues for different screen sizes
 - [x] Start other pages
 - [x] Add Cookies
 

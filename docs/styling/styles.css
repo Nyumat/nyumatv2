@@ -92,6 +92,19 @@ li:not(:last-child) {
       font-size: 1.5em;
 }
 
+.me {
+      position: relative;
+      top: -70px;
+      width: auto;
+      text-align: center;
+      padding: 50px;
+}
+
+img {
+      width: 20%;
+      height: auto;
+      object-fit: cover;
+}
 
 .container p {
       width: fit-content;
@@ -164,7 +177,7 @@ ul:last-child {
 
 #wrapper {
       position: relative;
-      top: 200px;
+      top: 170px;
       display: flex;
       flex-direction: column;
       justify-content: center;
