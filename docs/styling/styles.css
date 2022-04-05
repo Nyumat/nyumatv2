@@ -1,6 +1,5 @@
 html,
 body {
-      margin: 10px;
       padding: 10px;
       box-sizing: border-box;
 }
@@ -52,11 +51,11 @@ html {
       /* fallback for old browsers */
       background: -webkit-linear-gradient(45deg, #f56481, #fffbd5, #baf8b4);
       /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #f56481, #fffbd5, #baf8b4);
+      background: linear-gradient(to left, #f56481, #fffbd5, #baf8b4);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
       background-size: 400%;
-      animation: bg-animation 10s alternate infinite;
+      animation: bg-animation 7s alternate infinite;
 }
 
 

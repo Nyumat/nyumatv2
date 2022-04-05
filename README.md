@@ -20,6 +20,8 @@
 - [ ] Hide top/bottom nav classes on scroll
 - [x] Add image to HW1
 - [ ] Begin Code Blog
+- [ ] Figure out what's going on with BG animation
+- [ ] Add some particles 
 - [ ] Fix layout issues for different screen sizes
 - [x] Start other pages
 - [x] Add Cookies
