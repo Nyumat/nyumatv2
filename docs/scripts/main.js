@@ -20,35 +20,6 @@ function type() {
       }
 }
 
-function fadeOut(target) {
-      var fadeTarget = document.getElementById(target);
-      var fadeEffect = setInterval(function () {
-            if (!fadeTarget.style.opacity) {
-                  fadeTarget.style.opacity = 1;
-            }
-            if (fadeTarget.style.opacity > 0) {
-                  fadeTarget.style.opacity = parseFloat(fadeTarget.style.opacity) - 0.1;
-            } else {
-                  clearInterval(fadeEffect);
-            }
-      }, 100);
-
-}
-
-function fadeIn(target) {
-      var fadeTarget = document.getElementById(target);
-      var fadeEffect = setInterval(function () {
-            if (!fadeTarget.style.opacity) {
-                  fadeTarget.style.opacity = 0;
-            }
-            if (fadeTarget.style.opacity < 1) {
-                  fadeTarget.style.opacity = parseFloat(fadeTarget.style.opacity) + 0.1;
-            } else {
-                  clearInterval(fadeEffect);
-            }
-      }, 100);
-
-}
 
 function erase() {
       if (charIndex > 0) {
@@ -64,6 +35,36 @@ function erase() {
       }
 }
 
+
+      function fadeOut(target) {
+            var fadeTarget = document.getElementById(target);
+            var fadeEffect = setInterval(function () {
+                  if (!fadeTarget.style.opacity) {
+                        fadeTarget.style.opacity = 1;
+                  }
+                  if (fadeTarget.style.opacity > 0) {
+                        fadeTarget.style.opacity = parseFloat(fadeTarget.style.opacity) - 0.1;
+                  } else {
+                        clearInterval(fadeEffect);
+                  }
+            }, 100);
+
+      }
+
+function fadeIn(target) {
+      var fadeTarget = document.getElementById(target);
+      var fadeEffect = setInterval(function () {
+            if (!fadeTarget.style.opacity) {
+                  fadeTarget.style.opacity = 0;
+            }
+            if (fadeTarget.style.opacity < 1) {
+                  fadeTarget.style.opacity = parseFloat(fadeTarget.style.opacity) + 0.1;
+            } else {
+                  clearInterval(fadeEffect);
+            }
+      }, 100);
+
+}
 
 window.onscroll = function () {
       if (window.pageYOffset > 50 && window.pageYOffset > 1600 || window.pageYOffset < 50) {
@@ -87,9 +88,3 @@ window.onbeforeunload = function () {
       window.scrollTo(0, 0);
 }
 
-// window.onload = () => {
-//       $("#body").fadeIn(1000);
-//       $("#loader-inner").fadeIn(1000);
-//       fadeIn("body");
-//       fadeIn("loader-inner");
-// }

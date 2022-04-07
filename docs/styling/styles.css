@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
 }
 
+.post_load {
+  display: none;
+}
+
 .aos_para {
   box-shadow: 5px 5px 20px;
   margin: 0 auto;
@@ -21,9 +25,7 @@ body {
   padding: 10px;
 }
 
-#is_index {
-  display: none;
-}
+
 
 li {
   display: inline;

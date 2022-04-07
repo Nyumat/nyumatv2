@@ -1,7 +1,7 @@
-
-
-const is_index = document.getElementById("is_index").innerHTML;
-
+/**
+ * Major revamp coming soon. This got messy once i removed the loader
+ * So i'm going to try to make it cleaner.
+ */
 const random_number = () => {
       return Math.floor(Math.random() * 9) + 1;
 };
@@ -102,26 +102,39 @@ function hideLoader() {
 
 
 
-function fadeIn() {
-      $(".post_load").fadeIn(1000);
-      AOS.init({
-            once: false,
-            mirror: true,
-            duration: 1000,
-            anchorPlacement: "top-bottom",
-      });
-}
-
 
 if (document.cookie.includes("seenb4")) {
       //window.onload = display_loader(101);
       //window.onload = display_loading(101, 101, is_index);
-      window.onload = hideLoader();
-                    
+      $(document).ready(function () {
+            $(".load").hide(0);
+            $(".counter").hide(0);
+            $(".post_load").fadeIn(1000);
+            AOS.init({
+                  once: false,
+                  mirror: true,
+                  duration: 1000,
+                  anchorPlacement: "top-bottom",
+            });
+      });
+
+      
 } else {
+      $(document).ready(function () {
+            $(".load").hide(0);
+            $(".counter").hide(0);
+            $(".post_load").fadeIn(1000);
+            AOS.init({
+                  once: false,
+                  mirror: true,
+                  duration: 1000,
+                  anchorPlacement: "top-bottom",
+            });
+      });
+
       document.cookie = "seenb4=true" + ";path=/";
       // Fade in the content
-      window.onload = fadeIn();
+      //window.onload = display_loader(101);
 }
 
 
