@@ -20,36 +20,6 @@ function type() {
       }
 }
 
-function erase() {
-      if (charIndex > 0) {
-            if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-            charIndex--;
-            setTimeout(erase, erasingDelay);
-      } else {
-            cursorSpan.classList.remove("typing");
-            textArrayIndex++;
-            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-            setTimeout(type, typingDelay + 1100);
-      }
-}
-
-
-window.onscroll = function () {
-      if (window.pageYOffset > 50 && window.pageYOffset > 1600 || window.pageYOffset < 50) {
-            fadeIn("btm_nav_bar");
-            fadeIn("nav_bar");
-            document.getElementById("btm_nav_bar").style.visibility = "visible";
-            document.getElementById("nav_bar").style.visibility = "visible";
-      } else {
-            fadeOut("btm_nav_bar");
-            fadeOut("nav_bar");
-            document.getElementById("btm_nav_bar").style.visibility = "hidden";
-            document.getElementById("nav_bar").style.visibility = "hidden";
-      }
-}
-
-
 function fadeOut(target) {
       var fadeTarget = document.getElementById(target);
       var fadeEffect = setInterval(function () {
@@ -80,12 +50,46 @@ function fadeIn(target) {
 
 }
 
+function erase() {
+      if (charIndex > 0) {
+            if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erase, erasingDelay);
+      } else {
+            cursorSpan.classList.remove("typing");
+            textArrayIndex++;
+            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+            setTimeout(type, typingDelay + 1100);
+      }
+}
+
+
+window.onscroll = function () {
+      if (window.pageYOffset > 50 && window.pageYOffset > 1600 || window.pageYOffset < 50) {
+            fadeIn("btm_nav_bar");
+            fadeIn("nav_bar");
+            document.getElementById("btm_nav_bar").style.visibility = "visible";
+            document.getElementById("nav_bar").style.visibility = "visible";
+      } else {
+            fadeOut("btm_nav_bar");
+            fadeOut("nav_bar");
+            document.getElementById("btm_nav_bar").style.visibility = "hidden";
+            document.getElementById("nav_bar").style.visibility = "hidden";
+      }
+}
+
 document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
       if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
-
-window.onload = () => {
-      fadeIn("body")
-      fadeIn("loader-inner")
+window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
 }
+
+// window.onload = () => {
+//       $("#body").fadeIn(1000);
+//       $("#loader-inner").fadeIn(1000);
+//       fadeIn("body");
+//       fadeIn("loader-inner");
+// }
