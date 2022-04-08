@@ -75,7 +75,14 @@ window.onscroll = function () {
       }
 }
 
-document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect and initalize aos
+      AOS.init({
+            once: false,
+            mirror: true,
+            duration: 1000,
+            anchorPlacement: "top-bottom",
+      });
+
       if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
