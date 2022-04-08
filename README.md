@@ -10,21 +10,17 @@
 
 ## Uses 
 
-- FontAwesome / GoogleFonts - Rock3D
-- jQuery
-- HTML5 / CSS / JS
+- FontAwesome / GoogleFonts / [Animate on Scroll](https://github.com/michalsnik/aos)
+- jQuery / HTML5 / CSS / JS
 
 # To-Do's:
 
 - [ ] Finish README
+- [x] Refactor Loading
 - [x] Hide top/bottom nav classes on scroll
 - [x] Add image to HW1
-- [ ] Begin Code Blog
-- [x] Figure out what's going on with BG animation
-- [ ] Add some particles 
+- [x] Begin Code Blog
 - [ ] Fix layout issues for different screen sizes
-- [x] Start other pages
-- [x] Add Cookies
 
 # License
 
