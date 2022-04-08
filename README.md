@@ -8,20 +8,18 @@
 
 <p align="center" style="font-size: 3rem;">Let's get better, together!</p>
 
-## Uses 
+## Specs 
 
-- FontAwesome / GoogleFonts - Rock3D
-- jQuery
-- HTML5 / CSS / JS
+- FontAwesome / AnimateOnScroll 
+- jQuery / HTML5 / CSS / JS
 
 # To-Do's:
 
 - [ ] Finish README
 - [x] Hide top/bottom nav classes on scroll
 - [x] Add image to HW1
-- [ ] Begin Code Blog
+- [x] Begin Code Blog
 - [x] Figure out what's going on with BG animation
-- [ ] Add some particles 
 - [ ] Fix layout issues for different screen sizes
 - [x] Start other pages
 - [x] Add Cookies

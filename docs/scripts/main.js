@@ -36,20 +36,19 @@ function erase() {
 }
 
 
-      function fadeOut(target) {
-            var fadeTarget = document.getElementById(target);
-            var fadeEffect = setInterval(function () {
-                  if (!fadeTarget.style.opacity) {
-                        fadeTarget.style.opacity = 1;
-                  }
-                  if (fadeTarget.style.opacity > 0) {
-                        fadeTarget.style.opacity = parseFloat(fadeTarget.style.opacity) - 0.1;
-                  } else {
-                        clearInterval(fadeEffect);
-                  }
-            }, 100);
-
-      }
+function fadeOut(id) {
+      var fadeTarget = document.getElementById(id);
+      var fadeEffect = setInterval(function () {
+            if (!fadeTarget.style.opacity) {
+                  fadeTarget.style.opacity = 1;
+            }
+            if (fadeTarget.style.opacity > 0) {
+                  fadeTarget.style.opacity = parseFloat(fadeTarget.style.opacity) - 0.1;
+            } else {
+                  clearInterval(fadeEffect);
+            }
+      }, 100);
+}
 
 function fadeIn(target) {
       var fadeTarget = document.getElementById(target);
@@ -67,16 +66,12 @@ function fadeIn(target) {
 }
 
 window.onscroll = function () {
-      if (window.pageYOffset > 50 && window.pageYOffset > 1600 || window.pageYOffset < 50) {
-            fadeIn("btm_nav_bar");
-            fadeIn("nav_bar");
-            document.getElementById("btm_nav_bar").style.visibility = "visible";
-            document.getElementById("nav_bar").style.visibility = "visible";
+      if (window.scrollY < 50 || window.scrollY >= document.body.scrollHeight - window.innerHeight) {
+            $("#btm_nav_bar").fadeIn("slow");
+            $("#nav_bar").fadeIn("slow");
       } else {
-            fadeOut("btm_nav_bar");
-            fadeOut("nav_bar");
-            document.getElementById("btm_nav_bar").style.visibility = "hidden";
-            document.getElementById("nav_bar").style.visibility = "hidden";
+            $("#btm_nav_bar").fadeOut("slow");
+            $("#nav_bar").fadeOut("slow");
       }
 }
 
