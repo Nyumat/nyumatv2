@@ -10,11 +10,8 @@
 
 ## Specs 
 
-<<<<<<< HEAD
 - FontAwesome / GoogleFonts / [Animate on Scroll](https://github.com/michalsnik/aos)
-=======
 - FontAwesome / AnimateOnScroll 
->>>>>>> v2
 - jQuery / HTML5 / CSS / JS
 
 # To-Do's:
@@ -24,10 +21,7 @@
 - [x] Hide top/bottom nav classes on scroll
 - [x] Add image to HW1
 - [x] Begin Code Blog
-<<<<<<< HEAD
-=======
 - [x] Figure out what's going on with BG animation
->>>>>>> v2
 - [ ] Fix layout issues for different screen sizes
 
 # License
