@@ -20,6 +20,7 @@ function type() {
       }
 }
 
+
 function erase() {
       if (charIndex > 0) {
             if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
@@ -35,23 +36,8 @@ function erase() {
 }
 
 
-window.onscroll = function () {
-      if (window.pageYOffset > 50 && window.pageYOffset > 1600 || window.pageYOffset < 50) {
-            fadeIn("btm_nav_bar");
-            fadeIn("nav_bar");
-            document.getElementById("btm_nav_bar").style.visibility = "visible";
-            document.getElementById("nav_bar").style.visibility = "visible";
-      } else {
-            fadeOut("btm_nav_bar");
-            fadeOut("nav_bar");
-            document.getElementById("btm_nav_bar").style.visibility = "hidden";
-            document.getElementById("nav_bar").style.visibility = "hidden";
-      }
-}
-
-
-function fadeOut(target) {
-      var fadeTarget = document.getElementById(target);
+function fadeOut(id) {
+      var fadeTarget = document.getElementById(id);
       var fadeEffect = setInterval(function () {
             if (!fadeTarget.style.opacity) {
                   fadeTarget.style.opacity = 1;
@@ -62,7 +48,6 @@ function fadeOut(target) {
                   clearInterval(fadeEffect);
             }
       }, 100);
-
 }
 
 function fadeIn(target) {
@@ -80,12 +65,21 @@ function fadeIn(target) {
 
 }
 
+window.onscroll = function () {
+      if (window.scrollY < 50 || window.scrollY >= document.body.scrollHeight - window.innerHeight) {
+            $("#btm_nav_bar").fadeIn("slow");
+            $("#nav_bar").fadeIn("slow");
+      } else {
+            $("#btm_nav_bar").fadeOut("slow");
+            $("#nav_bar").fadeOut("slow");
+      }
+}
+
 document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
       if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
-
-window.onload = () => {
-      fadeIn("body")
-      fadeIn("loader-inner")
+window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
 }
+

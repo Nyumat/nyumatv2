@@ -1,3 +1,4 @@
+
 .loader {
       background: #fffbd5;
       /* fallback for old browsers */
@@ -52,7 +53,7 @@
       line-height: 100px;
       position: absolute;
       text-align: center;
-      top: 70%;
+      top: 60%;
       transform: translate(-50%, -50%);
       
 }
@@ -64,7 +65,7 @@
       margin: auto;
       position: absolute;
       right: 0;
-      top: 0;
+      top: -150px;
       width: 100px;
       z-index: 99999;
       

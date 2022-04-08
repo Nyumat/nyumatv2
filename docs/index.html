@@ -2,27 +2,24 @@
 <html lang="en">
 
 <head>
-      <title>Tom Site</title>
+      <title>Tom's Site</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="./styling/loading.css">
       <link rel="stylesheet" href="./styling/styles.css">
-      <link rel="stylesheet" href="particles.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Rock+3D&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/eb9be143b8.js" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 
 </head>
 
 
-<body id="body" onload="enableDarkMode()"style="height:1000px">
+<body id="body" onload="onsetload(100)"style="height:700px">
 
-      <div>
-            <p id="is_index">true</p>
-      </div>
-
-      <div class="load">
+      <div class="load" id="loading">
 
             <div id="loader-inner" class="loader-inner">
                   <div class="loader-line-wrap">
@@ -43,8 +40,7 @@
 
             </div>
 
-            <script src="./scripts/loading.js">
-            </script>
+            <script src="./scripts/loading.js"></script>
 
       </div>
 
@@ -76,8 +72,6 @@
                   <div class="header">
                         <h1>Nyumat's Web<h1>
                   </div>
-
-
 
                   <div id="nav_bar_wrapper">
                         <!---Top Nav Bar-->
