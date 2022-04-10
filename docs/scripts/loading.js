@@ -7,20 +7,27 @@
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-      $(".loader-inner").hide();
+      AOS.init({
+            once: false,
+            mirror: true,
+            duration: 1000,
+            anchorPlacement: "top-bottom",
+      });
+      $(".load").hide();
 });
 
 function onsetload(count_to) {
       // 10 seconds from now
       var tenSecondsFromNow = new Date(new Date().getTime() + 10000);
 
-      console.log(Cookies.get("Loading Screen"));
+      console.log(Cookies.get());
       
       if (Cookies.get("Loading Screen") == "Seen") {
+            $(".load").hide();
             $(".post_load").fadeIn(500);
       } else {
-            $(".loader-inner").fadeIn(500);
-            document.getElementById("loading").style.display = "block";
+            $(".loader-inner").show();
+            $(".load").fadeIn(500);
             var start_count = 0;
             var counter = setInterval(function () {
                   $(".counter").text(start_count + "%");
