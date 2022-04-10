@@ -16,8 +16,6 @@
 
 # To-Do's:
 
-- [ ] Refactor Loading but with Cookies 
-- [ ] Finish Code Blog
 - [ ] Fix layout issues for different screen sizes
 - [ ] Add node.js
 - [ ] Do Contact and About sections
