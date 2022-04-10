@@ -16,13 +16,11 @@
 
 # To-Do's:
 
-- [ ] Finish README
-- [x] Refactor Loading
-- [x] Hide top/bottom nav classes on scroll
-- [x] Add image to HW1
-- [x] Begin Code Blog
-- [x] Figure out what's going on with BG animation
+- [ ] Refactor Loading but with Cookies 
+- [ ] Finish Code Blog
 - [ ] Fix layout issues for different screen sizes
+- [ ] Add node.js
+- [ ] Do Contact and About sections
 
 # License
 
