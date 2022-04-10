@@ -164,7 +164,6 @@ ul:last-child {
 }
 
 #nav_bar {
-  display: inline-block;
   white-space: nowrap;
   position: fixed;
   font-size: 1.5em;
