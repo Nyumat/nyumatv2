@@ -4,6 +4,7 @@
 <head>
       <title>Homework One</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="../scripts/loading.js"></script>
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link rel="stylesheet" href="../styling/loading.css">
       <link rel="stylesheet" href="../styling/styles.css">
@@ -42,8 +43,6 @@
             <div class="counter">
                   <p></p>
             </div>
-
-            <script src="./scripts/loading.js"></script>
 
       </div>
 
@@ -91,12 +90,15 @@
                               <br>
                               <br>
                               <br>
+                              <br>
+                              <br>
                               <p class="aos_para">
-                                    One really specific challenge I faced on the creation of this assignment was 
-                                    the fading the navigation bar on the scroll of the web page. The way I fixed this 
-                                    was creating an window.onscroll event which is a callback function that checks the
-                                    distance from the top of the page on scroll. If it is within a selected range from
-                                    the top or bottom, I wrote a seperate function which takes in a class and fades in/out that element.
+                                    My challenges with this assignment included but weren't limited to: fading the nav bar when it 
+                                    'collides' with another element, not showing the loading screen on refresh, 
+                                    and, implementing a linear gradient. I solved the fading of the nav bar(s) by utilizing the onscroll
+                                    event listener and scrollY property to determine if it was within limits to be faded out.
+                                    I solved the loading screen problem by strapping the logic into a Cookie on the 
+                                    web page which expires after 3 minutes. I implemented the linear gradient by using modern css.
                               </p>
 
                         </div>
@@ -106,26 +108,12 @@
                               <br>
                               <br>
                               <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
                               <p class="aos_para">
-                                    In this assignment, I learned how to deploy a website through the OSU engineering servers,
-                                    how to create a  linear gradient background, and, how to maniuplate elements using jquery and the DOM.
-                                    I already knew most of the content, but I wanted to try doing something I didn't which is why I added so many
-                                    animations to this. This web app well end up being the hub for all my assignments
-                                    so I wanted to make it as modular as possible.
+                                    In this first homework, I learned how to use use vanialla javascript to manipulate the DOM,
+                                    how to upload a single page application to the ENGR servers, and how to incorparate a splash screen.
+                                    I already knew javascript/html5/css core fundamentals from some personal development but the last
+                                    time I used the stack formally was in highschool AP Computer Science Principles where we used code.org (ES5) (:•O) 
                               </p>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
                               <br>
                               <br>
                         </div>
@@ -136,17 +124,12 @@
                               <br>
                               <br>
                               <br>
-
-                              <br>
                               <p class="aos_para">
-                                   
+                                   The most helpful resource was w3schools.com. This website essentially curates everything
+                                    about the Web tools/languages we use in Web Development into one resource that can be easily
+                                    indexed, tested, and used. When I had issues with stuff like Cookies, I was able to go on to
+                                    w3schools and see an implementation or best practice that I could usee when coding this homework.
                               </p>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
                               <br>
                               <br>
                               <br>
@@ -187,7 +170,6 @@
             </div>
 
       </div>
-      <script src="../scripts/loading.js"></script>
 
 </body>
 

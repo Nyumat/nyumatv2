@@ -1,33 +1,31 @@
-// loading.js
+// loading.js 
 
-// Refactor for v2. It was a mess before but we made it work cleanly now.
-
-/**
- * @param {integer} count_to
- */
+const hideSplash = () => {
+      if (Cookies.get("Loading Screen") == "Seen") {
+            $(".load").hide();
+      }
+}
 
 document.addEventListener("DOMContentLoaded", function () {
+      hideSplash();
       AOS.init({
             once: false,
             mirror: true,
             duration: 1000,
             anchorPlacement: "top-bottom",
       });
-      $(".load").hide();
 });
 
+/**
+ * @param {integer} count_to - The number to count to. (required)
+ * 
+ */
 function onsetload(count_to) {
-      // 10 seconds from now
-      var tenSecondsFromNow = new Date(new Date().getTime() + 10000);
-
-      console.log(Cookies.get());
-      
-      if (Cookies.get("Loading Screen") == "Seen") {
-            $(".load").hide();
-            $(".post_load").fadeIn(500);
+      var threeMinutesFromNow = new Date(new Date().getTime() + 3 * 60 * 1000);
+      const status = Cookies.get("Loading Screen");
+      if (status == "Seen") {
+            $(".post_load").fadeIn("slow");
       } else {
-            $(".loader-inner").show();
-            $(".load").fadeIn(500);
             var start_count = 0;
             var counter = setInterval(function () {
                   $(".counter").text(start_count + "%");
@@ -46,7 +44,7 @@ function onsetload(count_to) {
                   }
             }, 80);
             Cookies.set("Loading Screen", "Seen", {
-                  expires: tenSecondsFromNow
+                  expires: threeMinutesFromNow
             });
       }
 }
