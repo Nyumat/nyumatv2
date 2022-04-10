@@ -7,32 +7,38 @@
  */
 
 function onsetload(count_to) {
-      
-      if ($("#loading").length > 0) {
+      $(".load").hide();
+      var oneMinuteFromNow = new Date(new Date().getTime() + 60000);
 
+      console.log(Cookies.get("Loading Screen"));
+      
+      if (Cookies.get("Loading Screen") == "Seen") {
+            
+            $(".post_load").fadeIn(500);
+
+      
+      } else {
             document.getElementById("loading").style.display = "block";
             var start_count = 0;
-            var counter = setInterval(function() {
+            var counter = setInterval(function () {
                   $(".counter").text(start_count + "%");
-                  start_count++;
+                  start_count += 2;
                   $(".counter").css("font-size", "+=0.7px");
-      
+
                   if (start_count == count_to) {
                         clearInterval(counter);
                         $(".counter").text(count_to);
-                        setTimeout(function() {
+                        setTimeout(function () {
                               $("#loading").fadeOut(500);
                               $(".counter").fadeOut(500);
-                        }
-                        , 500);
+                              setTimeout(function () {
+                                    $(".post_load").fadeIn(500);
+                              }, 500);
+                        }, 500);
                   }
             }, 80);
-            setTimeout(function() {
-                  clearInterval(counter);
-                  $(".post_load").fadeIn(500);
-            }, count_to * 92);
-
-      } else {
-            $(".post_load").fadeIn(500);
+            Cookies.set("Loading Screen", "Seen", {
+                  expires: oneMinuteFromNow
+            });
       }
 }
