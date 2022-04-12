@@ -65,6 +65,11 @@ function fadeIn(target) {
 
 }
 
+function setGithubStats() {
+      document.getElementById('github-stats').innerHTML = marked.parse(`![Nyumat's GitHub stats](https://github-readme-stats.vercel.app/api?username=nyumat&show_icons=true&theme=radical&hide=contribs&count_private=true)`);
+}
+
+
 window.onscroll = function () {
       if (window.scrollY < 50 || window.scrollY >= document.body.scrollHeight - window.innerHeight) {
             $("#btm_nav_bar").fadeIn("slow");
@@ -75,7 +80,8 @@ window.onscroll = function () {
       }
 }
 
-document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect and initalize aos
+document.addEventListener("DOMContentLoaded", function () { 
+      setGithubStats();
       if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
