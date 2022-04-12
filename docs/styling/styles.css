@@ -81,9 +81,9 @@ html {
   overflow-x: hidden;
   background: #fffbd5;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(45deg, #f56481, #fffbd5, #baf8b4);
+  background: -webkit-linear-gradient(45deg, #f56481, #a9fdf5, #d93b7d);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f56481, #fffbd5, #baf8b4);
+  background: linear-gradient(to right, #f56481, #a9fdf5, #d93b7d);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   background-size: 400%;
@@ -276,4 +276,9 @@ a:hover {
   justify-content: center;
   align-content: center;
   align-items: center;
+  gap: 5rem;
+}
+
+#github-stats img{
+  width: 25vw;
 }

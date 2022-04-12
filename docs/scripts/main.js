@@ -65,16 +65,10 @@ function fadeIn(target) {
 
 }
 
-
-function renderStats() {
-      fetch("../images/stats.md")
-            .then((response) => response.text())
-            .then((text) => {
-                  alert("lol");
-                  document.getElementById('output').innerHTML = md.render(text);
-            });
-      console.log("lol");
+function setGithubStats() {
+      document.getElementById('github-stats').innerHTML = marked.parse(`![Nyumat's GitHub stats](https://github-readme-stats.vercel.app/api?username=nyumat&show_icons=true&theme=radical&hide=contribs&count_private=true)`);
 }
+
 
 window.onscroll = function () {
       if (window.scrollY < 50 || window.scrollY >= document.body.scrollHeight - window.innerHeight) {
@@ -87,6 +81,7 @@ window.onscroll = function () {
 }
 
 document.addEventListener("DOMContentLoaded", function () { 
+      setGithubStats();
       if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
