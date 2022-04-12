@@ -65,6 +65,17 @@ function fadeIn(target) {
 
 }
 
+
+function renderStats() {
+      fetch("../images/stats.md")
+            .then((response) => response.text())
+            .then((text) => {
+                  alert("lol");
+                  document.getElementById('output').innerHTML = md.render(text);
+            });
+      console.log("lol");
+}
+
 window.onscroll = function () {
       if (window.scrollY < 50 || window.scrollY >= document.body.scrollHeight - window.innerHeight) {
             $("#btm_nav_bar").fadeIn("slow");
@@ -75,7 +86,7 @@ window.onscroll = function () {
       }
 }
 
-document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect and initalize aos
+document.addEventListener("DOMContentLoaded", function () { 
       if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
