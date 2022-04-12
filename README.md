@@ -11,14 +11,13 @@
 ## Specs 
 
 - FontAwesome / GoogleFonts / [Animate on Scroll](https://github.com/michalsnik/aos)
-- FontAwesome / AnimateOnScroll 
-- jQuery / HTML5 / CSS / JS
+- jQuery / HTML5 / CSS / jS
 
 # To-Do's:
 
-- [ ] Fix layout issues for different screen sizes
+- [x] Fix layout issues for different screen sizes
 - [ ] Add node.js
-- [ ] Do Contact and About sections
+- [x] Do Contact and About sections
 
 # License
 
