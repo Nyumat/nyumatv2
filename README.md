@@ -17,9 +17,7 @@
 
 # To-Do's:
 
-- [x] Fix layout issues for different screen sizes
-- [ ] Add node.js
-- [x] Do Contact and About sections
+New To-Do's coming soon.
 
 # License
 
