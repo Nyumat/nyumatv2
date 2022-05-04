@@ -1,40 +1,39 @@
-// loading.js
+// loading.js 
 
 const hideSplash = () => {
       if (Cookies.get("Loading Screen") == "Seen") {
             $(".load").hide();
       }
-};
+}
 
 document.addEventListener("DOMContentLoaded", function () {
       hideSplash();
       AOS.init({
             once: false,
             mirror: true,
-            duration: 1000,
+            duration: 1500,
             anchorPlacement: "top-bottom",
       });
 });
 
 /**
  * @param {integer} count_to - The number to count to. (required)
- *
+ * 
  */
 function onsetload(count_to) {
-      var threeMinutesFromNow = new Date(new Date().getTime() + 3 * 60 * 1000);
+      var tenMinutesFromNow = new Date(new Date().getTime() + 10 * 60 * 1000);
       const status = Cookies.get("Loading Screen");
       if (status == "Seen") {
-            $(".load").hide();
             $(".post_load").fadeIn("slow");
       } else {
             var start_count = 0;
             var counter = setInterval(function () {
                   $(".counter").text(start_count + "%");
-                  start_count += Math.floor(Math.random() * (5 - 0 + 1)) + 0;
+                  start_count += 2;
                   $(".counter").css("font-size", "+=0.7px");
-                  if (start_count >= count_to) {
+                  if (start_count == count_to) {
                         clearInterval(counter);
-                        $(".counter").text(count_to + "%");
+                        $(".counter").text(count_to);
                         setTimeout(function () {
                               $(".loader-inner").fadeOut(500);
                               $(".counter").fadeOut(500);
@@ -45,7 +44,7 @@ function onsetload(count_to) {
                   }
             }, 80);
             Cookies.set("Loading Screen", "Seen", {
-                  expires: threeMinutesFromNow,
+                  expires: tenMinutesFromNow
             });
       }
 }

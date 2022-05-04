@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-      <title>Homework Two Blog - CS290</title>
+      <title>Homework Three Blog - CS290</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="../scripts/loading.js"></script>
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -67,7 +67,7 @@
                   <!---------------Typewriter Script-------------------->
                   <script src="../scripts/main.js"></script>
                   <div class="header">
-                        <h1>Homework 2 Code Blog<h1>
+                        <h1>Homework 3 Code Blog<h1>
                   </div>
 
                   <!---Incoming Line Break Hell lmao-->
@@ -83,24 +83,29 @@
                         --->
 
                         <div class="item" data-aos-delay="0" data-aos="flip-up">
-                              
+
                               <p class="aos_para">
-                                    My challenges with this assingment included getting the navbar to be a certain distance away from 
-                                    the other sibling elements, getting a perfect match with the borders/colors/shadows, and making
-                                    the twit-author class set correctly when the twit-container is flexed.
+                                    In this assignment, I had trouble with search. First, making the 
+                                    search work properly came with a whole set of problems. Personally, in my web development 
+                                    experience I always hide elements with css. However, the requirements wanted us to
+                                    "completely" remove the elements not matching the query from the DOM, therefore
+                                    I had to figure out how to do that. What I did to work through the issue was check if the 
+                                    substring of whe query was not in the text of the viewable twits. If true, I removed
+                                    the element. 
                               </p>
 
                         </div>
 
 
                         <div class="item" data-aos-delay="0" data-aos="flip-left">
-                              
+
                               <p class="aos_para">
-                                    I worked through the navbar issues by using a calc() to determine the amount to transform
-                                    along the X-axis. I used a color picker to get a perfect match with the colors and played 
-                                    around with the border/shadow through trial and error to get a match there. I used max-width/height
-                                    and flex-basis to make the twit author fit in the container. I had to google how to focus a 
-                                    search bar, and how to center a flexbox.
+                                    Another issue I had was actually creating the tweet programatically. I had to figure out
+                                    how to create the individual parts of the twit (the author, content, icon). What I did was
+                                    create individual functions to do each part of the creation. I then called the functions in 
+                                    a "main" function which actually submits the twit by appeding the combined sub-elements into one and submitting that 
+                                    HTMLElement to the DOM. Making the process modular really helped me in this assignment, especially when I had to
+                                    inevitably debug the code.
                               </p>
 
                         </div>
@@ -109,14 +114,14 @@
                         <div class="item" data-aos-delay="0" data-aos="zoom-in-right">
 
                               <p class="aos_para">
-                                    I learned how to use CSS to mockup a webpage given the html. I also 
-                                    learned how to use CSS to make calculations, and make superb box shadows.
-                                    I already knew how to approach the problem, but the actual fine
-                                    implementaton ideas needed brushing up. The most helpful resource in this
-                                    assignment process was the TA's who've held office hours. I had a really 
-                                    specific issue--they were able to help me work through it without giving me the answer!
+                                    I learned how to manipulate the DOM in new ways, how to programatically create an element 
+                                    in vanilla JS, and how to make modular client side javascript code. The most helpful resource 
+                                    during this specific assignment was the class lectures. I wasn't able to be at class due to being
+                                    sick, so having recorded lectures helped when I came across issues that I couldn't solve and 
+                                    needed to implement some of the functionality according to the requirements. 
                               </p>
                               <!---------Line Break Hell, I know----------------->
+                              <br>
                               <br>
                               <br>
                               <br>
