@@ -1,9 +1,9 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["vast.", "fun.", "a journey.", "LIFE!"];
-const typingDelay = 100;
-const erasingDelay = 100;
+const textArray = ["this.", "fun.", "vast.", "LIFE!"];
+const typingDelay = 135;
+const erasingDelay = 150;
 const newTextDelay = 800; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
@@ -65,11 +65,6 @@ function fadeIn(target) {
 
 }
 
-function setGithubStats() {
-      document.getElementById('github-stats').innerHTML = marked.parse(`![Nyumat's GitHub stats](https://github-readme-stats.vercel.app/api?username=nyumat&show_icons=true&theme=radical&hide=contribs&count_private=true)`);
-}
-
-
 window.onscroll = function () {
       if (window.scrollY < 50 || window.scrollY >= document.body.scrollHeight - window.innerHeight) {
             $("#btm_nav_bar").fadeIn("slow");
@@ -80,12 +75,10 @@ window.onscroll = function () {
       }
 }
 
-document.addEventListener("DOMContentLoaded", function () { 
-      setGithubStats();
+document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect and initalize aos
       if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
 window.onbeforeunload = function () {
       window.scrollTo(0, 0);
 }
-
