@@ -284,7 +284,7 @@ a:hover {
 }
 
 #assignlist {
-  font-size: 2.5em;
+  font-size: 2.0em;
   display: flex;
   position: relative;
   top: 160px;
@@ -292,7 +292,7 @@ a:hover {
   align-content: center;
   align-items: center;
   flex-direction: row;
-  margin-left: -50px;
+  flex-wrap: wrap;
 }
 
 #flexer-ul {

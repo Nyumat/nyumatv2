@@ -33,7 +33,7 @@ function onsetload(count_to) {
                   $(".counter").css("font-size", "+=0.7px");
                   if (start_count == count_to) {
                         clearInterval(counter);
-                        $(".counter").text(count_to);
+                        $(".counter").text(count_to + "%");
                         setTimeout(function () {
                               $(".loader-inner").fadeOut(500);
                               $(".counter").fadeOut(500);
