@@ -2,6 +2,7 @@ html,
 body {
   padding: 10px;
   box-sizing: border-box;
+  height: 100%;
 }
 
 .post_load {
@@ -214,16 +215,28 @@ ul:last-child {
   margin-bottom: 0;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #nav_bar {
+      font-size: calc(50.5% + 1.5vw);
+      top: 0%;
+      position: fixed;
+      width: 100%;
+      left: calc(50% - 45vw);
+    }
+
+}
+
 #nav_bar {
+  font-size: calc(50.5% + 1.5vw);
   top: 0%;
-  white-space: nowrap;
-  padding: 0.5rem;
-  letter-spacing: 0.01rem;
-  width: fit-content;
   position: fixed;
-  font-size: calc(2.35vw);
-  margin: 0 auto;
-  transform: translateX(-51.5%);
+  width: 100%;
+  text-align: center;
+  left: -20px;
 }
 
 #btm_nav_bar {
@@ -301,12 +314,33 @@ a:hover {
   justify-content: center;
   align-items: center;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
   position: relative;
   top: 100px;
   margin-left: -50px;
   font-size: 5.0em;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #flexer-ul {
+      gap: 2rem;
+      top: 100px;
+      margin-left: -50px;
+      font-size: 3.0em;
+    }
+
+    #github-stats {
+      border-radius: 2%;
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: calc(80% - 10px);
+    }
+  }
 
 #github-stats img {
   border-radius: 2%;
