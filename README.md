@@ -4,9 +4,7 @@
 
 <p align="center" style="font-size: 3rem;">Repository dedicated to the personal website I'll be using to host my entire CS290 coursework.</p>
 
-<p align="center" style="font-size: 3rem; text-decoration: line-through;"> At some point, I may consider using this for global use (hence the contact page etc) but for now, I'll stick with keeping it educational.</p>
-
-<p align="center" style="font-size: 3rem;">Update: I will NOT be using this as a personal website. I want something more modern so I'll be creating the next one heree soon.</p>
+<p align="center" style="font-size: 3rem;">Update: I will NOT be using this as a personal website. I want something more modern so I'll be creating the next one here soon.</p>
 
 <p align="center" style="font-size: 3rem;">Let's get better, together!</p>
 
