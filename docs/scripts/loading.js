@@ -44,7 +44,7 @@ function onsetload(count_to) {
                   }
             }, 80);
             Cookies.set("Loading Screen", "Seen", {
-                  expires: oneMinuteFromNow
+                  expires: thirtySecondsFromNow
             });
       }
 }
