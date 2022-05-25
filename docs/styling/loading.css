@@ -50,6 +50,8 @@
       font-family: monospace;
       white-space: nowrap;
       position: relative;
+      transform: translateY(400px);
+      color: blue;
 }
 
 .loader-inner {
