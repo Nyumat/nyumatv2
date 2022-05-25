@@ -81,7 +81,9 @@ window.onscroll = function () {
 
 document.addEventListener("DOMContentLoaded", function () {
       if (textArray.length) setTimeout(type, newTextDelay + 250);
-      setGithubStats();
+      if (window.location.href.indexOf("contact.html") > -1) {
+            setGithubStats();
+      } 
 });
 
 window.onbeforeunload = function () {
