@@ -240,7 +240,7 @@ ul:last-child {
   position: fixed;
   width: 100%;
   text-align: center;
-  left: calc(50% - 50vw);
+  left: calc(50% - 55vw);
 }
 
 #btm_nav_bar {
