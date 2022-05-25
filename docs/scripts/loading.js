@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
  * 
  */
 function onsetload(count_to) {
-      var thirtySecondsFromNow = new Date() / 1000 + 30;
+      var oneSecondFromNow = new Date().getTime() + 1000;
       const status = Cookies.get("Loading Screen");
       if (status == "Seen") {
             $(".post_load").fadeIn("slow");
@@ -44,7 +44,7 @@ function onsetload(count_to) {
                   }
             }, 80);
             Cookies.set("Loading Screen", "Seen", {
-                  expires: thirtySecondsFromNow
+                  expires: oneSecondFromNow
             });
       }
 }
