@@ -29,7 +29,7 @@
       font-size: calc(50.5% + 1.5vw);
       white-space: nowrap;
       position: relative;
-      transform: translateY(390px);
+      transform: translateY(385px);
       color: midnightblue;
       font-family: "Courier New", Courier, monospace;
 }

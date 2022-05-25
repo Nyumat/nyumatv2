@@ -96,6 +96,7 @@ h1 {
 
 html {
   background-color: #000;
+  overflow-x: hidden;
 }
 
 h2,h3 {
@@ -239,9 +240,8 @@ ul:last-child {
   position: fixed;
   width: 100%;
   text-align: center;
-  left: -20px;
+  left: calc(50% - 50vw);
 }
-
 
 #btm_nav_bar {
   white-space: calc(100% + 1vw);
