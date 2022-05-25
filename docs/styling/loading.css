@@ -42,8 +42,13 @@
 }
 
 .counter {
+      font-family: monospace;
       font-size: 45px;
       left: 50%;
+      height: max-content;
+      width: max-content;
+      position: absolute;
+      text-align: center;
       top: 60%;
       transform: translate(-50%, -50%);
 
