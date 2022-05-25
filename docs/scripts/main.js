@@ -97,20 +97,20 @@ function renderParticles() {
 particlesJS("particles-js", {
       "particles": {
             "number": {
-                  "value": 80,
+                  "value": 180,
                   "density": {
                         "enable": true,
                         "value_area": 800
                   }
             },
             "color": {
-                  "value": "#ffffff"
+                  "value": "#00ff45"
             },
             "shape": {
                   "type": "circle",
                   "stroke": {
                         "width": 0,
-                        "color": "#000000"
+                        "color": "#00ff45"
                   },
                   "polygon": {
                         "nb_sides": 5
@@ -144,7 +144,7 @@ particlesJS("particles-js", {
             "line_linked": {
                   "enable": true,
                   "distance": 150,
-                  "color": "#ffffff",
+                  "color": "#0033ff",
                   "opacity": 0.4,
                   "width": 1
             },

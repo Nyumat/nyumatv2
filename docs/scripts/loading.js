@@ -3,7 +3,7 @@
 const hideSplash = () => {
       if (Cookies.get("Loading Screen") == "Seen") {
             $(".load").hide();
-      }
+      } 
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,7 +41,7 @@ function onsetload(count_to) {
                                     $(".post_load").fadeIn(500);
                               }, 500);
                         }, 500);
-                  }
+                  } 
             }, 80);
             Cookies.set("Loading Screen", "Seen", {
                   expires: tenMinutesFromNow
