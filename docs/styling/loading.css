@@ -49,8 +49,8 @@
       -webkit-text-fill-color: transparent;
       width: 100%;
       text-align: center;
-      position: relative;
-      top: 400px;
+      position: fixed;
+      top: 0;
 }
 
 .loader-inner {
