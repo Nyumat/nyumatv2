@@ -47,11 +47,23 @@
       margin: 0 auto;
       text-align: center;
       font-size: calc(50.5% + 1.5vw);
-      font-family: monospace;
       white-space: nowrap;
       position: relative;
-      transform: translateY(400px);
-      color: blue;
+      transform: translateY(380px);
+      /* linear gradient yellow to red to orange to purple */
+      background: -webkit-linear-gradient(45deg, #44008e, #ffe602, #ff0000);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #44008e, #ffe602, #ff0000);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      /* make the text a linear gradienr */
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Courier New", Courier, monospace;
+
+
+
+
 }
 
 .loader-inner {
