@@ -219,9 +219,9 @@ ul:last-child {
   margin-bottom: 0;
 }
 
-@media only screen 
+/* @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
     #nav_bar {
@@ -232,15 +232,17 @@ ul:last-child {
       left: calc(50% - 45vw);
     }
 
-}
+} */
+
 
 #nav_bar {
   font-size: calc(50.5% + 1.5vw);
   top: 0%;
   position: fixed;
-  width: 100%;
+  display: block;
   text-align: center;
-  left: calc(50% - 56vw);
+  width: 100%;
+  transform: translateX(-55%);
 }
 
 #btm_nav_bar {
@@ -250,7 +252,6 @@ ul:last-child {
   position: fixed;
   bottom: 0;
   transform: translateX(-65%);
-  transition: bottom 0.2s ease-in-out;
 }
 
 #wrapper {
