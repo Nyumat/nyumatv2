@@ -12,7 +12,7 @@ li {
 }
 
 li:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 
@@ -262,6 +262,21 @@ ul:last-child {
   height: 100%;
 }
 
+#dot {
+  color: #0033ffc3;
+}
+
+#dot:hover {
+  background: linear-gradient(to right,
+      #7e57c2,
+      #2196f3,
+      #26c6da,
+      #3e06d684);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 a {
   text-decoration: none;
   color: #0033ffc3;
@@ -292,7 +307,20 @@ a:hover {
   -webkit-text-fill-color: transparent;
 }
 
+#projectlist {
+  font-size: calc(50.5% + 2.5vw);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
 #assignlist {
+  margin-right: 42px;
   font-size: 2.0em;
   display: flex;
   position: relative;
