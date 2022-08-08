@@ -1,0 +1,38 @@
+
+h1 {
+      color: rgb(0, 38, 255);
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      margin: 0 auto;
+      padding-right: 00px;
+}
+
+#blog_header h1{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 2.5em;
+      display: flexbox;
+      justify-content: center;
+      position: fixed;
+      font-size: 1.5em;
+      top: 0;
+      transform: translateX(-50%);
+
+}
+
+h2 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.5em;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+#container div{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-direction: column;
+}
