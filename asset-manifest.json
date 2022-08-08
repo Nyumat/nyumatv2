@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "nyumat/static/css/main.d3113076.chunk.css",
+    "main.js": "nyumat/static/js/main.747499ee.chunk.js",
+    "main.js.map": "nyumat/static/js/main.747499ee.chunk.js.map",
+    "runtime-main.js": "nyumat/static/js/runtime-main.d2aa7572.js",
+    "runtime-main.js.map": "nyumat/static/js/runtime-main.d2aa7572.js.map",
+    "static/css/2.31ff0196.chunk.css": "nyumat/static/css/2.31ff0196.chunk.css",
+    "static/js/2.f3585cc1.chunk.js": "nyumat/static/js/2.f3585cc1.chunk.js",
+    "static/js/2.f3585cc1.chunk.js.map": "nyumat/static/js/2.f3585cc1.chunk.js.map",
+    "static/js/3.d9d7555a.chunk.js": "nyumat/static/js/3.d9d7555a.chunk.js",
+    "static/js/3.d9d7555a.chunk.js.map": "nyumat/static/js/3.d9d7555a.chunk.js.map",
+    "index.html": "nyumat/index.html",
+    "static/css/2.31ff0196.chunk.css.map": "nyumat/static/css/2.31ff0196.chunk.css.map",
+    "static/css/main.d3113076.chunk.css.map": "nyumat/static/css/main.d3113076.chunk.css.map",
+    "static/js/2.f3585cc1.chunk.js.LICENSE.txt": "nyumat/static/js/2.f3585cc1.chunk.js.LICENSE.txt",
+    "static/media/tomnyuma.de45c253.jpg": "nyumat/static/media/tomnyuma.de45c253.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2aa7572.js",
+    "static/css/2.31ff0196.chunk.css",
+    "static/js/2.f3585cc1.chunk.js",
+    "static/css/main.d3113076.chunk.css",
+    "static/js/main.747499ee.chunk.js"
+  ]
+}
